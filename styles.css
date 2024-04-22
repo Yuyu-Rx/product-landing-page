@@ -1,0 +1,185 @@
+*,
+::before,
+::after{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+   color:#70380f;
+}
+body{
+  font-family: Helvetica;
+}
+  
+header{
+  width:100%;
+  height:80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.brand{
+  height: 100%;
+  display:inline-flex;
+  align-items: center;
+}
+
+h1{
+  font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+
+#header-img{
+  width:max(5vw, 100px);
+  aspect-ratio: auto;
+  
+}
+
+nav > ul{
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
+  height: 100%;
+  align-items: center;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+nav > ul > li{
+  color:#b45918;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+  text-align:center;
+}
+nav > ul > li >a{
+  color: inherit;
+  text-decoration: none;
+}
+
+main{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+section{
+  width:80%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+#intro{
+  width:80%;
+  margin: 0 auto;
+  display:flex;
+justify-content:center;
+padding-top: 80px;
+}
+.email{
+  text-align: center;
+}
+
+.email > h4 {
+  font-size: 1.2rem;
+  padding:0.8rem;
+}
+.email > #email {
+  font-size: 0.9rem;
+  padding:5px;
+  max-width:275px;
+  width:100%;
+  
+}
+#submit{
+  display: block;
+  font-size: 0.9rem;
+  margin: 10px auto 0;
+  padding: 10px;
+  background-color:#70380f;
+  color:white;
+  border:1px solid #70380f;
+  border-radius: 10px;
+}
+#video{
+  width:100%;
+  max-width:560;
+}
+
+.feature{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap:2rem;
+}
+
+.fa{
+  font-size:4rem;
+  grid-column: 1 / 2;
+  text-align:center;
+  color:#b45918;
+  padding-right: 1rem;
+}
+.feature > div{
+  grid-column: 2 / 3;
+  text-align:start;
+}
+
+.feature >div>p{
+margin-top: 0.5rem;
+}
+.rental_plan{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+.plan{
+  width: calc(100%/3);
+  border:solid 2px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  flex-wrap: wrap;
+  min-width: 150px;
+}
+.topic{ 
+  background-color:#70380f;
+  color:white;
+  padding: 1rem;
+  width:100%;
+  font-size:1.3rem;
+  font-weight:800
+}
+.plan > h5{
+  color:#b45918;
+  padding: 1rem;
+  font-size:1.1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .rental_plan{
+  flex-direction: column;
+  align-items: center;}
+  
+  header{
+    text-align:center;
+    height:100px;
+    display: block;
+    }
+  .brand{
+    padding:0;
+    height:90%;}
+  nav > ul{
+    margin-right: 0;
+    height:0;
+  }
+  nav > ul > li{
+    margin:0;
+    padding:0;
+  }
+  section, #intro{
+    padding-top:100px;
+  }
+}
