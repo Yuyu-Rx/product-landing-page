@@ -102,9 +102,13 @@ padding-top: 80px;
   border:1px solid #70380f;
   border-radius: 10px;
 }
+
+iframe{
+    width:100%;
+    max-width:560px;
+}
+
 #video{
-  width:100%;
-  max-width:560px;
   height: 315px;
 }
 
