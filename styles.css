@@ -104,7 +104,8 @@ padding-top: 80px;
 }
 #video{
   width:100%;
-  max-width:560;
+  max-width:560px;
+  height:auto;
 }
 
 .feature{
